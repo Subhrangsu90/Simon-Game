@@ -7,12 +7,22 @@ var started = false;
 var level = 0;
 var highestScore = 0;
 
-$(document).keypress(function () {
-  if (!started) {
-    $("#level-title").text("Level " + level);
+$(document).ready(function () {
+  $("#popup, #overlay").removeClass("hidden");
+  $("#start-game").click(function () {
+    $("#popup, #overlay").addClass("hidden");
     nextSequence();
     started = true;
-  }
+  });
+
+  $(document).keypress(function () {
+    if (!started) {
+      $("#popup, #overlay").addClass("hidden");
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
 });
 
 $(".btn").click(function () {
