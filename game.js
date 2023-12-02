@@ -15,6 +15,12 @@ $(document).ready(function () {
     started = true;
   });
 
+  $("#restart-game").click(function () {
+    nextSequence();
+    started = true;
+    $("#restart-game").addClass("hidden");
+  });
+
   $(document).keypress(function () {
     if (!started) {
       $("#popup, #overlay").addClass("hidden");
@@ -51,8 +57,10 @@ function checkAnswer(currentLevel) {
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
-
+    $("#level-title").text(
+      "Game Over, Press Any Key or Restart Button to Restart"
+    );
+    $("#restart-game").removeClass("hidden");
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);

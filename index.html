@@ -22,25 +22,26 @@
       </p>
       <button id="start-game">Let's Start👍</button>
     </div>
-  
+
     <div class="main">
       <!-- Game -->
+      <h1 id="level-title">Press A Key to Start<span>🎮</span></h1>
+      <section class="score">
+        <p class="label-highscore">
+          🥇 Highest Score: <span class="highscore">0</span>
+        </p>
+      </section>
+      <div class="container">
+        <button id="restart-game" class="hidden">Restart🔄</button>
+        <div class="row">
+          <div type="button" id="green" class="btn green"></div>
+          <div type="button" id="red" class="btn red"></div>
+        </div>
 
-    <h1 id="level-title">Press A Key to Start<span>🎮</span></h1>
-    <section class="score">
-      <p class="label-highscore">
-        🥇 Highest Score: <span class="highscore">0</span>
-      </p>
-    </section>
-    <div class="container">
-      <div class="row">
-        <div type="button" id="green" class="btn green"></div>
-        <div type="button" id="red" class="btn red"></div>
-      </div>
-
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
+        <div class="row">
+          <div type="button" id="yellow" class="btn yellow"></div>
+          <div type="button" id="blue" class="btn blue"></div>
+        </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
