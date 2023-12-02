@@ -8,7 +8,6 @@ Welcome to the Simon Game repository! This is a digital version of the classic S
 - [Features](#features)
 - [Playing the Game](#playing-the-game)
 - [Game Instructions](#game-instructions)
-- [Live Game](#live-game)
 
 ## Introduction
 
@@ -45,7 +44,3 @@ To play the game, visit the live version [here](https://subhrangsu90.github.io/S
 
 - **Highscore:**
   - The highest score achieved is displayed on the screen.
-
-## Live Game
-
-You can play the live version of the Simon Game [here](https://subhrangsu90.github.io/Simon-Game/).
